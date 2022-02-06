@@ -1,0 +1,39 @@
+SALESFORCE USEFUL CLI COMMANDS :
+
+* [to update CLI version]
+sfdx update
+
+* [lists all top-level topics]
+sfdx --help | -h
+
+* [is sfdx cli installed or not? or check the updated version]
+sfdx --version | -v
+
+* []
+sfdx alias:list
+
+* [auth connections]
+sfdx auth:list    list auth connection information
+sfdx auth:logout  log out from authorized orgs
+
+* [authorize an org using a web browser]
+sfdx auth:web:login      
+
+* [lists all the topics under force]
+sfdx force --help  
+
+* [to check all the connected orgs with this file]
+sfdx force:org:list
+sfdx force:org:list --all
+
+* [login/ authorize an dev org or sandbox with the connected file(at terminal)]
+sfdx force:auth:web:login --setalias <hub_org_name> --instanceurl https://login.salesforce.com
+sfdx force:auth:web:login --setalias <sandbox_name> --instanceurl https://test.salesforce.com
+
+* [to set the alias name]
+sfdx force:config:set defaultusername=my-sandbox
+
+*[to deploy or retrive the component files to/from org using metadata type... Here -m stands for metadata]
+sfdx force:source:deploy -m CustomObject,ApexClass,ApexTrigger,ApexPage,CustomLabels,AuraDefinitionBundle
+sfdx force:source:retrieve -m CustomObject,ApexClass,ApexTrigger,ApexPage,CustomLabels,AuraDefinitionBundle
+  
