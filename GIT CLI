@@ -1,0 +1,80 @@
+1. stage File(s) :
+	git add .
+	git add example.txt 
+	git add myfolder
+note: if there is a space use quotes there.
+
+2. chech the stage files
+	git status
+	
+3. unstage files
+	git reset HEAD example.txt
+	git restore --staged <file>...
+
+4. Delete Files
+	git rm example.txt
+	git rm -r myfolder
+	
+5. commit files
+	git commit -m "message for commit"
+	git status (--> nothing to commit, working tree clean)
+	
+6. change last commit message
+	git commit --amend -m "Put your corrected message here"
+	
+7. to see list of commits with more details
+	git log
+	git log --stat(to see all commits even more details in that branch)
+NOTE: If the list is long, use the down/up arrow keys to scroll and hit Q to quit 
+	
+8. push changes/branch
+	git push --set-upstream origin arrays (if branch is not published)
+	git push origin arrays (if the branch exists means to update the branch)
+	
+9. checkouts commands :--
+	i) to new branch
+		git checkout -b <new_branch_name>  (by default it will cut off the branch from the current HEAD)
+		git checkout -b <new_branch> <from_branch> (from a specific branch)
+		git checkout <branchname>
+
+10. fetch all the contents / How to checkout a branch in a shared resources/ team
+	git fetch --all
+	git checkout <remotebranch>
+	OR,
+	git checkout -b ＜remotebranch＞ origin/＜remotebranch＞ (for older version of git)
+	
+11. Additionally you can checkout a new local branch and reset it to the remote branches last commit.
+	git checkout -b ＜branchname＞
+	git reset --hard origin/＜branchname＞
+	
+12. git pull / fetch from remote 
+	git pull --rebase (If you pull remote changes with the flag --rebase, then your local changes are reapplied on top of the remote changes.)
+	
+	git pull --merge (If you pull remote changes with the flag --merge , which is also the default, then your local changes are merged with the remote changes.)
+	
+	git pull origin <branchname>
+	
+13. Everything about GIT stash
+	*git stash
+	*git stash save "add new button" (with a specific message to identify later)
+	*git stash -u (to add untracked files also in the stash)
+	>>Now you'r free to do other git operations
+	*git stash pop (re-apply the changes, also it will drop these changes from stash)
+	*git stash apply (re-apply the changes + keep them in stash)/ This is to re apply same stash to multiple branches.
+	
+	you can stash your changes multiple times with multiple indexes. then see all those using
+	*git stash list
+	*git stash pop (by default apply for the last stash file/ changes i.e. [0])
+	*git stash pop stash@{1} (this will take the 1th stashed files.)
+	
+	Link on Stash for more:
+		https://www.atlassian.com/git/tutorials/saving-changes/git-stash#:~:text=git%20stash%20temporarily%20shelves%20(or,re%2Dapply%20them%20later%20on.
+	
+	
+
+
+
+
+
+
+	
