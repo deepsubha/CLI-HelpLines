@@ -70,7 +70,8 @@ NOTE: If the list is long, use the down/up arrow keys to scroll and hit Q to qui
 	Link on Stash for more:
 		https://www.atlassian.com/git/tutorials/saving-changes/git-stash#:~:text=git%20stash%20temporarily%20shelves%20(or,re%2Dapply%20them%20later%20on.
 	
-	
+14. How to know about HEAD branch and selected branch:
+	*git branch -a
 
 
 
