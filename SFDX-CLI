@@ -1,4 +1,5 @@
 SALESFORCE USEFUL CLI COMMANDS :
+LINK:-- https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_source.htm#cli_reference_force_source_deploy
 
 * [to update CLI version]
 sfdx update
@@ -32,6 +33,11 @@ sfdx force:auth:web:login --setalias <sandbox_name> --instanceurl https://test.s
 
 * [to set the alias name]
 sfdx force:config:set defaultusername=my-sandbox
+
+* to deploy particular class
+sfdx force:source:deploy -p "force-app\main\default\classes/TFAQuestionAnswer.cls"
+
+
 
 *[to deploy or retrive the component files to/from org using metadata type... Here -m stands for metadata]
 sfdx force:source:deploy -m CustomObject,ApexClass,ApexTrigger,ApexPage,CustomLabels,AuraDefinitionBundle
