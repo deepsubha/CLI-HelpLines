@@ -72,6 +72,9 @@ NOTE: If the list is long, use the down/up arrow keys to scroll and hit Q to qui
 	
 14. How to know about HEAD branch and selected branch:
 	*git branch -a
+	*git show head
+15. how to check pointer branch
+	*git branch
 
 
 
