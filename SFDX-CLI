@@ -37,7 +37,11 @@ sfdx force:config:set defaultusername=my-sandbox
 * to deploy particular class
 sfdx force:source:deploy -p "force-app\main\default\classes/TFAQuestionAnswer.cls"
 
+* to retrieve particular custom Field
+sfdx force:source:retrieve -m CustomField:Contact.Amount__c
 
+*to retrieve particular custom object
+sfdx force:source:retrieve -m CustomObject:Account,Opportunity
 
 *[to deploy or retrive the component files to/from org using metadata type... Here -m stands for metadata]
 sfdx force:source:deploy -m CustomObject,ApexClass,ApexTrigger,ApexPage,CustomLabels,AuraDefinitionBundle
