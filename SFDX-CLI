@@ -36,6 +36,9 @@ sfdx force:config:set defaultusername=my-sandbox
 
 * to deploy particular class
 sfdx force:source:deploy -p "force-app\main\default\classes/TFAQuestionAnswer.cls"
+OR
+* to deploy particular class
+sfdx force:source:deploy -m ApexClass:ClassName
 
 * to retrieve particular custom Field
 sfdx force:source:retrieve -m CustomField:Contact.Amount__c
