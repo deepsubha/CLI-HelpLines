@@ -75,6 +75,10 @@ NOTE: If the list is long, use the down/up arrow keys to scroll and hit Q to qui
 	*git show head
 15. how to check pointer branch
 	*git branch
+	
+16. Git Merge if any conflicts in any branch
+	checkout the branch you need to resolve the conflicts 
+	git merge <PR_Branch_Name>
 
 
 
